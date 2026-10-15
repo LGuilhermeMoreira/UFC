@@ -1,0 +1,240 @@
+
+2025-01-22 20:56:07,282 - INFO - API inicializada
+2025-01-22 20:56:31,167 - INFO - Listagem de clientes realizada. Filtros: Nome=None, Email=None, CPF=None, Página=1, Limite=10
+2025-01-22 20:57:12,828 - INFO - Cliente obtido com sucesso. ID: 1
+2025-01-22 20:57:15,054 - INFO - Cliente obtido com sucesso. ID: 1
+2025-01-22 20:57:38,981 - INFO - Cliente obtido com sucesso. ID: 2
+2025-01-22 20:57:44,231 - WARNING - Cliente não encontrado. ID: 45
+2025-01-22 20:57:44,232 - ERROR - Erro ao obter cliente: 404: Cliente not found
+2025-01-22 20:57:44,232 - INFO - Cliente obtido com sucesso. ID: 45
+2025-01-22 20:58:42,309 - INFO - Cliente obtido com sucesso. ID: 1
+2025-01-22 20:58:56,241 - INFO - Cliente obtido com sucesso. ID: 10
+2025-01-22 20:59:03,843 - WARNING - Cliente não encontrado. ID: 22152
+2025-01-22 20:59:03,843 - ERROR - Erro ao obter cliente: 404: Cliente not found
+2025-01-22 20:59:03,843 - INFO - Cliente obtido com sucesso. ID: 22152
+2025-01-22 20:59:20,069 - WARNING - Cliente não encontrado. ID: 22152
+2025-01-22 20:59:20,069 - ERROR - Erro ao obter cliente: 404: Cliente not found
+2025-01-22 20:59:20,069 - INFO - Cliente obtido com sucesso. ID: 22152
+2025-01-22 20:59:27,763 - INFO - Cliente obtido com sucesso. ID: 1
+2025-01-22 20:59:39,935 - WARNING - Cliente não encontrado. ID: 155
+2025-01-22 20:59:39,936 - ERROR - Erro ao obter cliente: 404: Cliente not found
+2025-01-22 20:59:39,937 - INFO - Cliente obtido com sucesso. ID: 155
+2025-01-22 21:03:16,901 - INFO - Cliente obtido com sucesso. ID: 1
+2025-01-22 21:03:18,464 - INFO - Cliente obtido com sucesso. ID: 1
+2025-01-22 21:03:23,395 - WARNING - Cliente não encontrado. ID: 154115
+2025-01-22 21:03:23,396 - ERROR - Erro ao obter cliente: 404: Cliente not found
+2025-01-22 21:03:35,560 - WARNING - Cliente não encontrado. ID: 44
+2025-01-22 21:03:35,560 - ERROR - Erro ao obter cliente: 404: Cliente not found
+2025-01-22 21:09:02,395 - INFO - Cliente obtido com sucesso. ID: 1
+2025-01-22 21:09:08,236 - WARNING - Cliente não encontrado. ID: 15515
+2025-01-22 21:09:08,236 - ERROR - Erro ao obter cliente: 404: Cliente not found
+2025-01-22 21:09:49,290 - WARNING - Cliente não encontrado. ID: 1111
+2025-01-22 21:09:49,290 - ERROR - Erro ao obter cliente: 404: Cliente not found
+2025-01-22 21:11:30,812 - INFO - Cliente obtido com sucesso. ID: 1
+2025-01-22 21:11:40,979 - WARNING - Cliente não encontrado. ID: 5555
+2025-01-22 21:14:49,114 - INFO - Cliente obtido com sucesso. ID: 1
+2025-01-22 21:14:53,113 - WARNING - Cliente não encontrado. ID: 11111
+2025-01-22 21:14:53,115 - ERROR - Erro ao obter cliente: 404: Cliente not found
+2025-01-22 21:15:28,373 - WARNING - Cliente não encontrado. ID: 11111
+2025-01-22 21:15:28,374 - ERROR - Erro ao obter cliente: 404: Cliente not found
+2025-01-22 21:15:37,627 - INFO - Cliente obtido com sucesso. ID: 1
+2025-01-22 21:15:46,037 - WARNING - Cliente não encontrado. ID: 2222
+2025-01-22 21:15:50,801 - WARNING - Cliente não encontrado. ID: 1111
+2025-01-22 21:16:30,929 - INFO - Listagem de clientes realizada. Filtros: Nome=asdasd, Email=asdasdasd, CPF=asdasd, Página=1, Limite=10
+2025-01-22 21:16:55,524 - INFO - Cliente criado com sucesso. ID: 16
+2025-01-22 21:17:40,995 - INFO - Cliente criado com sucesso. ID: 17
+2025-01-22 21:18:38,302 - INFO - Cliente criado com sucesso. ID: 18
+2025-01-22 21:19:06,682 - INFO - Listagem de clientes realizada. Filtros: Nome=asdasd, Email=asdasdasd, CPF=asdasd, Página=1, Limite=10
+2025-01-22 21:19:14,750 - INFO - Listagem de clientes realizada. Filtros: Nome=None, Email=None, CPF=None, Página=1, Limite=10
+2025-01-22 21:19:29,773 - INFO - Listagem de clientes realizada. Filtros: Nome=None, Email=None, CPF=None, Página=1, Limite=20
+2025-01-22 21:33:51,011 - INFO - Listagem de comandas realizada. Filtros: Cliente ID=None, Mesa ID=None, Status=None, Página=1, Limite=10
+2025-01-22 21:34:02,514 - INFO - Listagem de comandas realizada. Filtros: Cliente ID=None, Mesa ID=None, Status=None, Página=1, Limite=10
+2025-01-22 21:34:16,323 - INFO - Listagem de comandas realizada. Filtros: Cliente ID=None, Mesa ID=None, Status=None, Página=1, Limite=5
+2025-01-22 21:35:10,503 - ERROR - Erro ao criar comanda: (pymysql.err.OperationalError) (1292, "Incorrect datetime value: 'string' for column 'data_hora_abertura' at row 1")
+[SQL: INSERT INTO comanda (id_cliente, id_mesa, data_hora_abertura, data_hora_fechamento, status) VALUES (%(id_cliente)s, %(id_mesa)s, %(data_hora_abertura)s, %(data_hora_fechamento)s, %(status)s)]
+[parameters: {'id_cliente': 1, 'id_mesa': 1, 'data_hora_abertura': 'string', 'data_hora_fechamento': 'string', 'status': 'string'}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-01-22 21:35:11,868 - ERROR - Erro ao criar comanda: (pymysql.err.OperationalError) (1292, "Incorrect datetime value: 'string' for column 'data_hora_abertura' at row 1")
+[SQL: INSERT INTO comanda (id_cliente, id_mesa, data_hora_abertura, data_hora_fechamento, status) VALUES (%(id_cliente)s, %(id_mesa)s, %(data_hora_abertura)s, %(data_hora_fechamento)s, %(status)s)]
+[parameters: {'id_cliente': 1, 'id_mesa': 1, 'data_hora_abertura': 'string', 'data_hora_fechamento': 'string', 'status': 'string'}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-01-22 21:36:30,963 - ERROR - Erro ao criar comanda: (pymysql.err.OperationalError) (1292, "Incorrect datetime value: '2025-01-23T00:35:44.895Z' for column 'data_hora_abertura' at row 1")
+[SQL: INSERT INTO comanda (id_cliente, id_mesa, data_hora_abertura, data_hora_fechamento, status) VALUES (%(id_cliente)s, %(id_mesa)s, %(data_hora_abertura)s, %(data_hora_fechamento)s, %(status)s)]
+[parameters: {'id_cliente': 1, 'id_mesa': 1, 'data_hora_abertura': '2025-01-23T00:35:44.895Z', 'data_hora_fechamento': '2025-01-23T00:35:44.895Z', 'status': 'string'}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-01-22 21:37:35,657 - ERROR - Erro ao criar comanda: (pymysql.err.OperationalError) (1292, "Incorrect datetime value: '2025-01-23T00:35:44.895Z' for column 'data_hora_abertura' at row 1")
+[SQL: INSERT INTO comanda (id_cliente, id_mesa, data_hora_abertura, data_hora_fechamento, status) VALUES (%(id_cliente)s, %(id_mesa)s, %(data_hora_abertura)s, %(data_hora_fechamento)s, %(status)s)]
+[parameters: {'id_cliente': 1, 'id_mesa': 1, 'data_hora_abertura': '2025-01-23T00:35:44.895Z', 'data_hora_fechamento': '2025-01-23T00:35:44.895Z', 'status': 'string'}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-01-22 21:38:12,878 - INFO - Listagem de clientes realizada. Filtros: Nome=None, Email=None, CPF=None, Pagina=1, Limite=10
+2025-01-22 21:38:51,514 - ERROR - Erro ao criar comanda: (pymysql.err.OperationalError) (1292, "Incorrect datetime value: '2025-01-23T00:35:44.895Z' for column 'data_hora_abertura' at row 1")
+[SQL: INSERT INTO comanda (id_cliente, id_mesa, data_hora_abertura, data_hora_fechamento, status) VALUES (%(id_cliente)s, %(id_mesa)s, %(data_hora_abertura)s, %(data_hora_fechamento)s, %(status)s)]
+[parameters: {'id_cliente': 1, 'id_mesa': 2, 'data_hora_abertura': '2025-01-23T00:35:44.895Z', 'data_hora_fechamento': '2025-01-23T00:35:44.895Z', 'status': 'string'}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-01-22 21:41:37,485 - ERROR - Erro ao criar comanda: (pymysql.err.OperationalError) (1292, "Incorrect datetime value: '2025-01-23T00:35:44.895Z' for column 'data_hora_abertura' at row 1")
+[SQL: INSERT INTO comanda (id_cliente, id_mesa, data_hora_abertura, data_hora_fechamento, status) VALUES (%(id_cliente)s, %(id_mesa)s, %(data_hora_abertura)s, %(data_hora_fechamento)s, %(status)s)]
+[parameters: {'id_cliente': 1, 'id_mesa': 2, 'data_hora_abertura': '2025-01-23T00:35:44.895Z', 'data_hora_fechamento': '2025-01-23T00:35:44.895Z', 'status': 'string'}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-01-22 21:42:56,900 - INFO - Comanda criada com sucesso. ID: 14
+2025-01-22 21:43:33,838 - INFO - Listagem de comandas realizada. Filtros: Cliente ID=None, Mesa ID=None, Status=None, Página=1, Limite=10
+2025-01-22 21:44:00,747 - INFO - Listagem de comandas realizada. Filtros: Cliente ID=1123, Mesa ID=None, Status=None, Página=1, Limite=10
+2025-01-22 21:44:08,230 - INFO - Listagem de comandas realizada. Filtros: Cliente ID=None, Mesa ID=None, Status=None, Página=1, Limite=10
+2025-01-22 21:50:46,130 - INFO - Listagem de ingredientes realizada. Filtros: Nome=None, Estoque=None, Quantidade Min=None, Quantidade Max=None, Peso=None, Pagina=1, Limite=10
+2025-01-22 21:51:01,943 - INFO - Listagem de ingredientes realizada. Filtros: Nome=None, Estoque=True, Quantidade Min=None, Quantidade Max=None, Peso=None, Pagina=1, Limite=10
+2025-01-22 21:51:21,986 - INFO - Listagem de pratos realizada. Filtros: Nome=None, Preço Min=None, Preço Max=None, Disponível=None, Pagina=1, Limite=10
+2025-01-22 21:54:47,224 - INFO - Listagem de pratos realizada. Filtros: Nome=None, Preço Min=None, Preço Max=None, Disponível=None, Pagina=1, Limite=10
+2025-01-22 21:55:02,557 - INFO - Listagem de pratos realizada. Filtros: Nome=None, Preco Min=None, Preco Max=None, Disponivel=None, Pagina=1, Limite=10
+2025-01-22 21:55:19,193 - INFO - Listagem de ingredientes realizada. Filtros: Nome=None, Estoque=None, Quantidade Min=None, Quantidade Max=None, Peso=None, Pagina=1, Limite=10
+2025-01-22 21:56:05,049 - INFO - Ingrediente atualizado com sucesso. ID: 1
+2025-01-22 21:56:14,786 - INFO - Listagem de ingredientes realizada. Filtros: Nome=None, Estoque=None, Quantidade Min=None, Quantidade Max=None, Peso=None, Pagina=1, Limite=10
+2025-01-22 22:02:25,888 - INFO - Listagem de clientes realizada. Filtros: Nome=None, Email=None, CPF=None, Pagina=1, Limite=10
+2025-01-22 22:02:34,107 - INFO - Cliente removido com sucesso. ID: 1
+2025-01-22 22:02:37,523 - INFO - Cliente removido com sucesso. ID: 2
+2025-01-22 22:02:39,631 - INFO - Cliente removido com sucesso. ID: 3
+2025-01-22 22:02:43,056 - INFO - Listagem de clientes realizada. Filtros: Nome=None, Email=None, CPF=None, Pagina=1, Limite=10
+2025-01-22 22:02:53,428 - INFO - Listagem de mesas realizada. Filtros: Numero Mesa=None, Capacidade=None, Ocupada=None, Numero Pessoas=None, Pagina=1, Limite=10
+2025-01-22 22:03:01,173 - INFO - Mesa removida com sucesso. ID: 1
+2025-01-22 22:03:03,985 - INFO - Mesa removida com sucesso. ID: 2
+2025-01-22 22:03:10,390 - INFO - Listagem de comandas realizada. Filtros: Cliente ID=None, Mesa ID=None, Status=None, Página=1, Limite=10
+2025-01-22 22:03:11,152 - INFO - Listagem de comandas realizada. Filtros: Cliente ID=None, Mesa ID=None, Status=None, Página=1, Limite=10
+2025-01-22 22:03:38,824 - INFO - Comanda removida com sucesso. ID: 1
+2025-01-22 22:03:41,369 - INFO - Comanda removida com sucesso. ID: 2
+2025-01-22 22:03:44,960 - INFO - Listagem de comandas realizada. Filtros: Cliente ID=None, Mesa ID=None, Status=None, Página=1, Limite=10
+2025-01-22 22:03:52,102 - INFO - Comanda removida com sucesso. ID: 3
+2025-01-22 22:03:54,845 - INFO - Comanda removida com sucesso. ID: 5
+2025-01-22 22:04:00,635 - INFO - Listagem de comandas realizada. Filtros: Cliente ID=None, Mesa ID=None, Status=None, Página=1, Limite=10
+2025-01-22 22:04:24,088 - INFO - Listagem de ingredientes realizada. Filtros: Nome=None, Estoque=None, Quantidade Min=None, Quantidade Max=None, Peso=None, Pagina=1, Limite=10
+2025-01-22 22:04:35,833 - INFO - Ingrediente removido com sucesso. ID: 1
+2025-01-22 22:04:41,628 - INFO - Ingrediente removido com sucesso. ID: 2
+2025-01-22 22:05:01,058 - INFO - Listagem de pratos realizada. Filtros: Nome=None, Preco Min=None, Preco Max=None, Disponivel=None, Pagina=1, Limite=10
+2025-01-22 22:05:04,727 - INFO - Listagem de pratos realizada. Filtros: Nome=None, Preco Min=None, Preco Max=None, Disponivel=None, Pagina=1, Limite=10
+2025-01-22 22:05:13,515 - INFO - Prato atualizado com sucesso. ID: 1
+2025-01-22 22:05:21,929 - INFO - Prato removido com sucesso. ID: 1
+2025-01-22 22:05:40,508 - INFO - Cliente criado com sucesso. ID: 4
+2025-01-22 22:05:45,410 - INFO - Cliente criado com sucesso. ID: 5
+2025-01-22 22:06:03,731 - INFO - Listagem de clientes realizada. Filtros: Nome=None, Email=None, CPF=None, Pagina=1, Limite=2
+2025-01-22 22:06:29,905 - WARNING - Cliente nao encontrado para atualizacao. ID: 1
+2025-01-22 22:06:50,589 - INFO - Cliente atualizado com sucesso. ID: 4
+2025-01-22 22:06:56,754 - INFO - Cliente criado com sucesso. ID: 6
+2025-01-22 22:07:01,206 - INFO - Listagem de clientes realizada. Filtros: Nome=None, Email=None, CPF=None, Pagina=1, Limite=2
+2025-01-22 22:07:08,433 - INFO - Listagem de clientes realizada. Filtros: Nome=None, Email=None, CPF=None, Pagina=1, Limite=3
+2025-01-22 22:07:20,189 - INFO - Cliente removido com sucesso. ID: 6
+2025-01-22 22:07:52,670 - INFO - Mesa criada com sucesso. ID: 3
+2025-01-22 22:08:02,318 - INFO - Listagem de mesas realizada. Filtros: Numero Mesa=None, Capacidade=None, Ocupada=None, Numero Pessoas=None, Pagina=1, Limite=10
+2025-01-22 22:08:10,734 - WARNING - Mesa nao encontrada. ID: 1
+2025-01-22 22:08:16,032 - INFO - Listagem de mesas realizada. Filtros: Numero Mesa=None, Capacidade=None, Ocupada=None, Numero Pessoas=None, Pagina=1, Limite=10
+2025-01-22 22:08:25,367 - INFO - Mesa obtida com sucesso. ID: 3
+2025-01-22 22:14:28,492 - INFO - Quantidade de clientes: 2
+2025-01-22 22:15:23,979 - INFO - Listagem de mesas realizada. Filtros: Numero Mesa=None, Capacidade=None, Ocupada=None, Numero Pessoas=None, Pagina=1, Limite=10
+2025-01-22 22:15:43,133 - INFO - Comanda criada com sucesso. ID: 6
+2025-01-22 22:15:49,367 - INFO - Comanda criada com sucesso. ID: 7
+2025-01-22 22:15:55,111 - INFO - Listagem de comandas realizada. Filtros: Cliente ID=None, Mesa ID=None, Status=None, Página=1, Limite=10
+2025-01-22 22:16:09,898 - INFO - Listagem de comandas realizada. Filtros: Cliente ID=None, Mesa ID=None, Status=None, Página=1, Limite=10
+2025-01-22 22:16:17,747 - INFO - Comanda obtida com sucesso. ID: 6
+2025-01-22 22:16:21,339 - INFO - Comanda obtida com sucesso. ID: 7
+2025-01-22 22:20:12,728 - INFO - Quantidade de clientes: 2
+2025-01-22 22:21:18,989 - INFO - Quantidade de mesas: 1
+2025-01-22 22:21:25,774 - INFO - Quantidade de comandas: 2
+2025-01-22 22:21:30,980 - INFO - Quantidade de ingredientes: 0
+2025-01-22 22:21:34,773 - INFO - Quantidade de ingredientes: 0
+2025-01-22 22:21:45,316 - INFO - Ingrediente criado com sucesso. ID: 3
+2025-01-22 22:21:51,289 - INFO - Quantidade de ingredientes: 1
+2025-01-22 22:21:58,402 - INFO - Listagem de ingredientes realizada. Filtros: Nome=None, Estoque=None, Quantidade Min=None, Quantidade Max=None, Peso=None, Pagina=1, Limite=10
+2025-01-22 22:22:08,292 - INFO - Ingrediente obtido com sucesso. ID: 3
+2025-01-22 22:22:08,512 - INFO - Ingrediente obtido com sucesso. ID: 3
+2025-01-22 22:22:19,220 - INFO - Ingrediente atualizado com sucesso. ID: 3
+2025-01-22 22:22:26,692 - INFO - Ingrediente criado com sucesso. ID: 4
+2025-01-22 22:22:27,418 - INFO - Ingrediente criado com sucesso. ID: 5
+2025-01-22 22:22:32,586 - INFO - Listagem de ingredientes realizada. Filtros: Nome=None, Estoque=None, Quantidade Min=None, Quantidade Max=None, Peso=None, Pagina=1, Limite=10
+2025-01-22 22:22:52,616 - INFO - Ingrediente removido com sucesso. ID: 4
+2025-01-22 22:22:53,414 - WARNING - Ingrediente nao encontrado para remocao. ID: 4
+2025-01-22 22:23:02,363 - INFO - Listagem de pratos realizada. Filtros: Nome=None, Preco Min=None, Preco Max=None, Disponivel=None, Pagina=1, Limite=10
+2025-01-22 22:23:03,096 - INFO - Listagem de pratos realizada. Filtros: Nome=None, Preco Min=None, Preco Max=None, Disponivel=None, Pagina=1, Limite=10
+2025-01-22 22:23:08,133 - INFO - Prato criado com sucesso. ID: 2
+2025-01-22 22:23:08,890 - INFO - Prato criado com sucesso. ID: 3
+2025-01-22 22:23:26,561 - INFO - Listagem de pratos realizada. Filtros: Nome=None, Preco Min=None, Preco Max=None, Disponivel=None, Pagina=1, Limite=10
+2025-01-22 22:23:36,189 - INFO - Prato removido com sucesso. ID: 2
+2025-01-22 22:23:49,823 - INFO - Prato atualizado com sucesso. ID: 3
+2025-01-22 22:23:58,936 - INFO - Listagem de ingredientes realizada. Filtros: Nome=None, Estoque=None, Quantidade Min=None, Quantidade Max=None, Peso=None, Pagina=1, Limite=10
+2025-01-22 22:24:04,178 - INFO - Listagem de pratos realizada. Filtros: Nome=None, Preco Min=None, Preco Max=None, Disponivel=None, Pagina=1, Limite=10
+2025-01-22 22:24:11,843 - INFO - Ingrediente 3 adicionado ao prato 3 com sucesso.
+2025-01-22 22:24:53,427 - INFO - Ingrediente criado com sucesso. ID: 6
+2025-01-22 22:25:04,332 - INFO - Ingrediente 6 adicionado ao prato 3 com sucesso.
+2025-01-22 22:26:00,525 - INFO - Listagem de comandas realizada. Filtros: Cliente ID=None, Mesa ID=None, Status=None, Página=1, Limite=10
+2025-01-22 22:26:11,482 - ERROR - Erro ao adicionar prato à comanda: name 'prato_model' is not defined
+2025-01-22 22:26:11,482 - INFO - Prato 3 adicionado à comanda 6 com sucesso.
+2025-01-22 22:27:10,735 - INFO - Listagem de comandas realizada. Filtros: Cliente ID=None, Mesa ID=None, Status=None, Página=1, Limite=10
+2025-01-22 22:27:43,915 - ERROR - Erro ao criar comanda: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`mydb`.`comanda`, CONSTRAINT `comanda_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id`))')
+[SQL: INSERT INTO comanda (id_cliente, id_mesa, data_hora_abertura, data_hora_fechamento, status) VALUES (%(id_cliente)s, %(id_mesa)s, %(data_hora_abertura)s, %(data_hora_fechamento)s, %(status)s)]
+[parameters: {'id_cliente': 6, 'id_mesa': 3, 'data_hora_abertura': datetime.datetime(2025, 1, 23, 1, 27, 26, 841000, tzinfo=TzInfo(UTC)), 'data_hora_fechamento': datetime.datetime(2025, 1, 23, 1, 27, 26, 841000, tzinfo=TzInfo(UTC)), 'status': 'string'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-22 22:28:05,043 - INFO - Listagem de comandas por cliente realizada. ID do cliente: 3
+2025-01-22 22:28:14,388 - INFO - Listagem de comandas por cliente realizada. ID do cliente: 6
+2025-01-22 22:28:17,308 - INFO - Listagem de comandas por cliente realizada. ID do cliente: 7
+2025-01-22 22:28:54,132 - INFO - Listagem de comandas realizada. Filtros: Cliente ID=None, Mesa ID=None, Status=None, Página=1, Limite=10
+2025-01-22 22:29:03,014 - INFO - Listagem de comandas por ano realizada. Ano: 2025
+2025-01-22 22:29:14,569 - INFO - Listagem de clientes realizada. Filtros: Nome=None, Email=None, CPF=None, Pagina=1, Limite=10
+2025-01-22 22:29:46,533 - INFO - Listagem de comandas realizada. Filtros: Cliente ID=None, Mesa ID=None, Status=None, Página=1, Limite=10
+2025-01-22 22:30:20,604 - INFO - Listagem de comandas por cliente realizada. ID do cliente: 4
+2025-01-22 22:30:44,361 - INFO - Comanda criada com sucesso. ID: 9
+2025-01-22 22:30:48,782 - INFO - Listagem de comandas por cliente realizada. ID do cliente: 4
+2025-01-22 22:30:53,310 - INFO - Listagem de comandas realizada. Filtros: Cliente ID=None, Mesa ID=None, Status=None, Página=1, Limite=10
+2025-01-22 22:31:10,104 - INFO - Listagem de comandas por cliente realizada. ID do cliente: 5
+2025-01-22 22:32:04,058 - INFO - Quantidade de pratos: 1
+2025-01-22 22:34:18,744 - INFO - Listagem de ingredientes realizada. Filtros: Nome=None, Estoque=None, Quantidade Min=None, Quantidade Max=None, Peso=None, Pagina=1, Limite=10
+2025-01-22 22:37:06,636 - INFO - Listagem de pratos ordenada por preco realizada
+2025-01-22 22:37:27,255 - INFO - Prato criado com sucesso. ID: 4
+2025-01-22 22:37:31,673 - INFO - Listagem de pratos ordenada por preco realizada
+2025-01-22 22:48:11,853 - INFO - Clientes e comandas da mesa obtidos com sucesso. ID da mesa: 3
+2025-01-22 22:49:29,013 - INFO - Listagem de comandas por ano realizada. Ano: 2025
+2025-01-22 22:49:38,079 - INFO - Listagem de pratos ordenada por preco realizada
+2025-01-22 22:49:38,752 - INFO - Listagem de pratos ordenada por preco realizada
+2025-01-22 22:57:51,481 - INFO - Cliente criado com sucesso. ID: 7
+2025-01-22 22:58:09,800 - INFO - Cliente criado com sucesso. ID: 8
+2025-01-22 22:58:14,327 - INFO - Listagem de clientes realizada. Filtros: Nome=None, Email=None, CPF=None, Pagina=1, Limite=10
+2025-01-22 22:58:27,862 - INFO - Cliente obtido com sucesso. ID: 7
+2025-01-22 22:58:30,709 - INFO - Cliente obtido com sucesso. ID: 8
+2025-01-22 22:58:32,345 - WARNING - Cliente nao encontrado. ID: 2
+2025-01-22 22:58:48,844 - INFO - Cliente atualizado com sucesso. ID: 8
+2025-01-22 22:59:17,237 - INFO - Cliente atualizado com sucesso. ID: 8
+2025-01-22 22:59:27,905 - INFO - Cliente criado com sucesso. ID: 9
+2025-01-22 22:59:36,385 - INFO - Cliente removido com sucesso. ID: 9
+2025-01-22 23:00:54,854 - INFO - Mesa criada com sucesso. ID: 4
+2025-01-22 23:01:10,437 - INFO - Listagem de mesas realizada. Filtros: Numero Mesa=None, Capacidade=None, Ocupada=None, Numero Pessoas=None, Pagina=1, Limite=10
+2025-01-22 23:01:11,139 - INFO - Listagem de mesas realizada. Filtros: Numero Mesa=None, Capacidade=None, Ocupada=None, Numero Pessoas=None, Pagina=1, Limite=10
+2025-01-22 23:02:41,784 - INFO - Mesa obtida com sucesso. ID: 4
+2025-01-22 23:02:45,312 - ERROR - Erro ao criar mesa: (pymysql.err.IntegrityError) (1062, "Duplicate entry '1' for key 'mesa.numero_mesa'")
+[SQL: INSERT INTO mesa (numero_mesa, capacidade, ocupada, numero_pessoas) VALUES (%(numero_mesa)s, %(capacidade)s, %(ocupada)s, %(numero_pessoas)s)]
+[parameters: {'numero_mesa': 1, 'capacidade': 2, 'ocupada': 1, 'numero_pessoas': 0}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-22 23:02:53,829 - INFO - Mesa criada com sucesso. ID: 6
+2025-01-22 23:03:24,746 - INFO - Listagem de mesas realizada. Filtros: Numero Mesa=None, Capacidade=None, Ocupada=None, Numero Pessoas=None, Pagina=1, Limite=10
+2025-01-22 23:03:41,190 - INFO - Mesa removida com sucesso. ID: 6
+2025-01-22 23:04:18,914 - INFO - Comanda criada com sucesso. ID: 10
+2025-01-22 23:04:32,367 - INFO - Comanda criada com sucesso. ID: 11
+2025-01-22 23:04:54,297 - INFO - Ingrediente criado com sucesso. ID: 7
+2025-01-22 23:05:00,730 - INFO - Ingrediente criado com sucesso. ID: 8
+2025-01-22 23:05:10,390 - INFO - Ingrediente criado com sucesso. ID: 9
+2025-01-22 23:05:14,782 - INFO - Listagem de ingredientes realizada. Filtros: Nome=None, Estoque=None, Quantidade Min=None, Quantidade Max=None, Peso=None, Pagina=1, Limite=10
+2025-01-22 23:05:47,445 - INFO - Ingrediente obtido com sucesso. ID: 8
+2025-01-22 23:06:01,428 - INFO - Ingrediente atualizado com sucesso. ID: 7
+2025-01-22 23:06:18,716 - INFO - Listagem de pratos realizada. Filtros: Nome=None, Preco Min=None, Preco Max=None, Disponivel=None, Pagina=1, Limite=10
+2025-01-22 23:06:29,763 - INFO - Listagem de ingredientes realizada. Filtros: Nome=None, Estoque=None, Quantidade Min=None, Quantidade Max=None, Peso=None, Pagina=1, Limite=10
+2025-01-22 23:06:37,747 - INFO - Ingrediente removido com sucesso. ID: 7
+2025-01-22 23:06:38,824 - WARNING - Ingrediente nao encontrado para remocao. ID: 7
+2025-01-22 23:06:43,247 - INFO - Quantidade de ingredientes: 2
+2025-01-22 23:06:51,555 - INFO - Listagem de pratos realizada. Filtros: Nome=None, Preco Min=None, Preco Max=None, Disponivel=None, Pagina=1, Limite=10
+2025-01-22 23:07:21,314 - INFO - Prato criado com sucesso. ID: 5
+2025-01-22 23:08:11,684 - INFO - Prato criado com sucesso. ID: 6
+2025-01-22 23:08:15,871 - INFO - Listagem de pratos realizada. Filtros: Nome=None, Preco Min=None, Preco Max=None, Disponivel=None, Pagina=1, Limite=10
+2025-01-22 23:08:48,750 - INFO - Listagem de ingredientes realizada. Filtros: Nome=None, Estoque=None, Quantidade Min=None, Quantidade Max=None, Peso=None, Pagina=1, Limite=10
+2025-01-22 23:09:18,311 - INFO - Quantidade de pratos: 2
+2025-01-22 23:09:34,858 - INFO - Ingrediente 8 adicionado ao prato 5 com sucesso.
+2025-01-22 23:10:12,286 - ERROR - Erro ao adicionar prato à comanda: name 'prato_model' is not defined
+2025-01-22 23:10:12,286 - INFO - Prato 5 adicionado à comanda 10 com sucesso.
+2025-01-22 23:10:24,980 - INFO - Clientes e comandas da mesa obtidos com sucesso. ID da mesa: 4
+2025-01-22 23:10:55,170 - INFO - Ingrediente 9 adicionado ao prato 6 com sucesso.
+2025-01-22 23:14:51,933 - INFO - Listagem de ingredientes realizada. Filtros: Nome=None, Estoque=None, Quantidade Min=None, Quantidade Max=None, Peso=None, Pagina=1, Limite=10
+2025-01-22 23:15:12,166 - INFO - Ingrediente atualizado com sucesso. ID: 8
+2025-01-22 23:15:33,399 - INFO - Ingrediente atualizado com sucesso. ID: 9
+2025-01-22 23:15:42,557 - INFO - Listagem de ingredientes realizada. Filtros: Nome=None, Estoque=None, Quantidade Min=None, Quantidade Max=None, Peso=None, Pagina=1, Limite=10

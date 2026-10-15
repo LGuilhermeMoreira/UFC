@@ -1,0 +1,6 @@
+Ola mundo,1234
+Criptografia,chavemuitomaiorqueotexto
+Teste com @#$! 123.,especial
+Texto com chave vazia,
+,chave_com_texto_vazio
+Universidade Federal do Ceara,Quixada

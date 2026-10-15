@@ -1,0 +1,4 @@
+2024-11-22 10:45:05,646 - INFO - Arquivo JSON 'data.json' carregado com sucesso.
+2024-11-22 10:45:05,647 - INFO - Processando registro: {'id': 1, 'name': 'John', 'age': 30}
+2024-11-22 10:45:05,647 - INFO - Processando registro: {'id': 2, 'name': 'Alice', 'age': 25}
+2024-11-22 10:45:05,647 - WARNING - Dado inválido: {'id': 3, 'name': 'Bob', 'age': None}

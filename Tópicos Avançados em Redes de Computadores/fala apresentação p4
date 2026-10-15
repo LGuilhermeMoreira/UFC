@@ -1,0 +1,45 @@
+SLIDE 1
+
+DDOS são ataques de negação de serviço, onde concentra um volume de trafego muito grande para uma rede ou servidor visando indisponibilizar o serviço. E essa sobercarga atrasa a detecção e reação.
+
+Aparir disso, foi desenvolvido uma abordagem para lidar com isso, que são switches programaveis com p4. Entretanto, a linguagem possui limitações.
+
+SLIDE 2
+
+entropia de rede: é uma métrica estatística que descreve a distribuição do tráfego
+
+Sketches: Estrutra de dados usada para estimar a contagem de pacotes de maneira eficiente
+
+algoritmo log log: um algoritmo para estimar cardinalidade de fluxo em um grande stream de dados
+
+Peso de Hamming: Simplesmente a contagem de número de bits ´1´ em uma string binária
+
+SLIDE 3
+
+
+A solução proposta é implementar um sistema de detecção de DDoS que oprea inteiramente no plano de dados.
+
+
+foi divido em 3 components.
+
+P4LOGLOG: um novo algorimto para estimar a cardinalidade de fluxo de forma eficiente em p4
+
+P4NEntropy: Estratégia para estimar a entropia normalizada do tráfego.
+
+Lógica de Deteccção: Um alarme é disparado se a entropia normalizada cai abaixo do limiar adaptivo
+
+SLIDE 4
+
+O cálculo da entropia normalizada depende diretamente da contagem do número de fluxos distintos
+
+comparação do P4loglog vs Linear Counting (outro método)
+
+Resultados foi uma vitória do P4loglog
+
+Com a mesma quantidade de memória, p4loglog apresenta um erro relativo menor.
+
+Atinge alta precisão 
+
+e esses resultados valida a base para o cálculo preciso de entropia normalizada.
+
+

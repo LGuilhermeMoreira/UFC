@@ -1,0 +1,10 @@
+O número no nome da instância é a quantidade de centrais da instância.
+
+Primeira linha temos: n nc m
+onde n é a quantidade de vértices total, nc a quantidade de centrais e m a quantidade de arestas.
+
+As próximas nc linhas temos: i d
+onde i o vértice central e d o grau mínimo dele.
+
+As próximas m linhas temos: i j c
+onde i e j representa a aresta e c o custo.

@@ -1,0 +1,8 @@
+{'nome do arquivo': 'test1.txt', 'numero de caracteres': 6, 'numero de palavra': 2, 'conteudo': 'test 1'}
+{'nome do arquivo': 'test2.txt', 'numero de caracteres': 6, 'numero de palavra': 2, 'conteudo': 'test 2'}
+{'nome do arquivo': 'test1.txt', 'numero de caracteres': 6, 'numero de palavra': 2, 'conteudo': 'test 1'}
+{'nome do arquivo': 'test2.txt', 'numero de caracteres': 6, 'numero de palavra': 2, 'conteudo': 'test 2'}
+{'nome do arquivo': 'test1.txt', 'numero de caracteres': 6, 'numero de palavra': 2, 'conteudo': 'test 1'}
+{'nome do arquivo': 'test2.txt', 'numero de caracteres': 6, 'numero de palavra': 2, 'conteudo': 'test 2'}
+{'nome do arquivo': 'test1.txt', 'numero de caracteres': 6, 'numero de palavra': 2, 'conteudo': 'test 1'}
+{'nome do arquivo': 'test2.txt', 'numero de caracteres': 6, 'numero de palavra': 2, 'conteudo': 'test 2'}

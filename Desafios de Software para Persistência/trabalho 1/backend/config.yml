@@ -1,0 +1,4 @@
+logging:
+  level: "INFO"  # Nível do log: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  file: "./log/file.log"
+  format: "%(asctime)s - %(levelname)s - %(message)s"

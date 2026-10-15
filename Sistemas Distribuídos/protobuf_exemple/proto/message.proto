@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package example;
+option go_package = "/entity";
+message Person {
+  string name = 1;
+  int32 id = 2;
+  string email = 3;
+}
+
+message AddressBook {
+  repeated Person people = 1;
+}
+
+service AddressBookService {
+  rpc AddPerson (Person) returns (Response);
+
+  rpc ListPeople (Empty) returns (AddressBook);
+}
+
+message Response {
+  string message = 1;
+}
+
+message Empty {}

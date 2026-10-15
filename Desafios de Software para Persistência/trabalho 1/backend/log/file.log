@@ -1,0 +1,51 @@
+2024-12-12 04:31:59,976 - INFO - Will watch for changes in these directories: ['/home/guigui/faculdade/DSPP-Trabalho-1/backend']
+2024-12-12 04:31:59,978 - INFO - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2024-12-12 04:31:59,979 - INFO - Started reloader process [4271] using WatchFiles
+2024-12-12 04:32:00,750 - INFO - Started server process [4273]
+2024-12-12 04:32:00,756 - INFO - Waiting for application startup.
+2024-12-12 04:32:00,757 - INFO - Application startup complete.
+2024-12-12 04:32:11,315 - INFO - GET http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:32:11,321 - INFO - GET http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:32:27,656 - INFO - GET http://localhost:8000/docs | Status: 200 | Duration: 0.00s
+2024-12-12 04:32:27,947 - INFO - GET http://localhost:8000/openapi.json | Status: 200 | Duration: 0.01s
+2024-12-12 04:32:33,232 - INFO - GET http://localhost:8000/sapato/download-zip | Status: 200 | Duration: 0.00s
+2024-12-12 04:35:21,725 - INFO - GET http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:36:26,714 - INFO - GET http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:36:57,196 - INFO - GET http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:36:57,200 - INFO - GET http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:37:23,399 - INFO - OPTIONS http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:37:23,410 - INFO - POST http://localhost:8000/sapato/ | Status: 201 | Duration: 0.01s
+2024-12-12 04:37:23,421 - INFO - GET http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:37:36,648 - INFO - OPTIONS http://localhost:8000/sapato/915c5f8d-36f2-44b8-81ee-ba199992af18 | Status: 200 | Duration: 0.00s
+2024-12-12 04:37:36,654 - INFO - PUT http://localhost:8000/sapato/915c5f8d-36f2-44b8-81ee-ba199992af18 | Status: 200 | Duration: 0.00s
+2024-12-12 04:37:36,662 - INFO - GET http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:37:44,878 - INFO - DELETE http://localhost:8000/sapato/915c5f8d-36f2-44b8-81ee-ba199992af18 | Status: 204 | Duration: 0.00s
+2024-12-12 04:37:44,884 - INFO - GET http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:37:47,951 - INFO - GET http://localhost:8000/sapato/hash | Status: 200 | Duration: 0.00s
+2024-12-12 04:37:52,487 - INFO - GET http://localhost:8000/sapato/download-zip | Status: 200 | Duration: 0.00s
+2024-12-12 04:39:47,829 - INFO - GET http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:39:50,465 - INFO - GET http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:39:51,428 - INFO - GET http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:39:56,836 - INFO - GET http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:39:56,840 - INFO - GET http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:39:58,885 - INFO - GET http://localhost:8000/sapato/download-zip | Status: 200 | Duration: 0.00s
+2024-12-12 04:40:26,927 - INFO - GET http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:40:26,936 - INFO - GET http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:40:28,394 - INFO - GET http://localhost:8000/sapato/download-zip | Status: 200 | Duration: 0.00s
+2024-12-12 04:41:38,552 - INFO - GET http://localhost:8000/sapato/download-zip | Status: 200 | Duration: 0.00s
+2024-12-12 04:42:19,702 - INFO - GET http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:42:24,832 - INFO - GET http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:42:24,836 - INFO - GET http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:42:26,537 - INFO - GET http://localhost:8000/sapato/download-zip | Status: 200 | Duration: 0.00s
+2024-12-12 04:42:41,971 - INFO - GET http://localhost:8000/sapato/ | Status: 200 | Duration: 0.00s
+2024-12-12 04:43:02,273 - INFO - Shutting down
+2024-12-12 04:43:02,374 - INFO - Waiting for application shutdown.
+2024-12-12 04:43:02,375 - INFO - Application shutdown complete.
+2024-12-12 04:43:02,376 - INFO - Finished server process [4273]
+2024-12-12 04:43:02,380 - INFO - Stopping reloader process [4271]
+2024-12-12 19:30:51,262 - INFO - Will watch for changes in these directories: ['/home/guigui/faculdade/DSPP-Trabalho-1/backend']
+2024-12-12 19:30:51,263 - INFO - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2024-12-12 19:30:51,264 - INFO - Started reloader process [3116] using WatchFiles
+2024-12-12 19:30:51,672 - INFO - Started server process [3132]
+2024-12-12 19:30:51,674 - INFO - Waiting for application startup.
+2024-12-12 19:30:51,675 - INFO - Application startup complete.

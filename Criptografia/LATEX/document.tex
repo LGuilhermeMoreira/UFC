@@ -1,0 +1,262 @@
+\documentclass[aspectratio=169]{beamer}
+
+% --- Tema e pacotes ---
+\usetheme{Madrid}
+\usecolortheme{seahorse}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+% --- Metadados ---
+\title[Criptografia Pós-Quântica]{Criptografia Pós-Quântica}
+\author{Guilherme Moreira e Leonardo Martins}
+\date{\today}
+
+\begin{document}
+	
+	% --- Slide de título ---
+	\begin{frame}
+		\titlepage
+	\end{frame}
+	
+	% --- O que é PQC ---
+	\begin{frame}{O que é Criptografia Pós-Quântica (PQC)?}
+		\begin{itemize}
+			\item Algoritmos criptográficos seguros contra atacantes quânticos
+			\item Executáveis em computadores clássicos
+			\item Baseados em problemas matemáticos \emph{não} vulneráveis a Shor
+			\item Foco principal: \textbf{criptografia de chave pública}
+		\end{itemize}
+	\end{frame}
+	
+		% --- Motivação ---
+	\begin{frame}{Motivação}
+		\begin{itemize}
+			\item Algoritmos clássicos de chave pública (RSA, ECC)
+			\item Ameaça de computadores quânticos escaláveis
+			\item Algoritmos quânticos relevantes:
+			\begin{itemize}
+				\item \textbf{Shor}: fatoração e logaritmo discreto em tempo polinomial
+				\item \textbf{Grover}: aceleração quadrática de busca exaustiva
+			\end{itemize}
+			\item Necessidade de \textbf{criptografia resistente a ataques quânticos}
+		\end{itemize}
+	\end{frame}
+	
+	
+		\begin{frame}{Algoritmo de Shor}
+		
+		\begin{itemize}
+			
+			\item Algoritmo quântico proposto por \textbf{Peter Shor (1994)}
+			
+			\item Resolve em \textbf{tempo polinomial}:
+			
+			\begin{itemize}
+				
+				\item Fatoração de inteiros
+				
+				\item Logaritmo discreto
+				
+			\end{itemize}
+			
+			\item Base matemática:
+			
+			\begin{itemize}
+				
+				\item Redução do problema de fatoração ao \textbf{problema de ordem}
+				
+				\item Uso da \textbf{Transformada de Fourier Quântica (QFT)}
+				
+			\end{itemize}
+			
+		\end{itemize}
+		
+	\end{frame}
+	
+	
+	% --- Impacto do Algoritmo de Shor ---
+	
+	\begin{frame}{Impacto do Algoritmo de Shor}
+		
+		\begin{itemize}
+			
+			\item Sistemas afetados:
+			
+			\begin{itemize}
+				
+				\item RSA (fatoração de \(N = pq\))
+				
+				\item Diffie-Hellman
+				
+				\item Criptografia de curvas elípticas (ECC)
+				
+			\end{itemize}
+			
+			\item Consequência:
+			
+			\begin{itemize}
+				
+				\item Chaves grandes \textbf{não aumentam a segurança}
+				
+				\item Segurança colapsa com computadores quânticos escaláveis
+				
+			\end{itemize}
+			
+			\item Motivação direta para a \textbf{Criptografia Pós-Quântica}
+			
+		\end{itemize}
+		
+	\end{frame} 
+	
+	% --- Algoritmo de Grover ---
+	\begin{frame}{Algoritmo de Grover}
+		\begin{itemize}
+			\item Algoritmo quântico proposto por \textbf{ Lov Grover (1996)}
+			\item \textbf{Aceleração Quadrática}: Otimiza buscas de $O(N)$ para $O(\sqrt{N})$.
+			\item \textbf{Mecânica do Operador de Grover}:
+			\begin{itemize}
+				\item \textbf{Oráculo}: Identifica e inverte a fase do estado "marcado" (solução).
+				\item \textbf{Difusão}: Realiza a "inversão sobre a média", amplificando a probabilidade da solução.
+				\item \textbf{Iteração}: Repetido aproximadamente $\frac{\pi}{4}\sqrt{N}$ vezes para máxima probabilidade.
+			\end{itemize}
+			\item \textbf{Solução Pós-Quântica}: Dobrar o tamanho das chaves (ex: migrar para AES-256).
+		\end{itemize}
+	\end{frame}
+	% --- Impacto do Grover ---
+	\begin{frame}{Impacto do Algoritmo de Grover}
+		\begin{itemize}
+			\item Reduz segurança efetiva de chaves simétricas pela metade
+			\item Exemplo:
+			\begin{itemize}
+				\item AES-128 \(\rightarrow\) ~64 bits de segurança quântica
+				\item AES-256 recomendado no cenário pós-quântico
+			\end{itemize}
+			\item Hashes também sofrem impacto semelhante
+			\begin{itemize}
+				\item \textbf{SHA-256}: Resistência  a colisão cai para 128 
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+	 
+	% --- Famílias de PQC ---
+	\begin{frame}{Principais Famílias de PQC}
+		\begin{enumerate}
+			\item Criptografia baseada em \textbf{reticulados}
+			\item Criptografia baseada em \textbf{códigos corretores de erro}
+			\item Criptografia baseada em \textbf{funções hash}
+		\end{enumerate}
+	\end{frame}
+	
+	% --- Lattices ---
+	\begin{frame}{Criptografia Baseada em Reticulados}
+		\begin{itemize}
+			\item Reticulado: conjunto discreto de pontos em \(\mathbb{R}^n\)
+			\item Problemas difíceis:
+			\begin{itemize}
+				\item SVP – Shortest Vector Problem
+				\item CVP – Closest Vector Problem
+				\item LWE / Ring-LWE / Module-LWE
+			\end{itemize}
+			\item Vantagens:
+			\begin{itemize}
+				\item Boas provas de segurança
+				\item Eficiência razoável
+				\item Base da maioria dos padrões atuais
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+	
+	% --- Exemplos Lattice ---
+	\begin{frame}{Exemplos Baseados em Reticulados}
+		\begin{itemize}
+			\item Troca de chaves / KEM:
+			\begin{itemize}
+				\item Kyber
+			\end{itemize}
+			\item Assinaturas digitais:
+			\begin{itemize}
+				\item Dilithium
+				\item Falcon
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+	
+	% --- Code-based ---
+	\begin{frame}{Criptografia Baseada em Códigos}
+		\begin{itemize}
+			\item Baseada em códigos corretores de erro
+			\item Problema difícil: \textbf{decodificação de códigos lineares aleatórios}
+			\item Algoritmo clássico:
+			\begin{itemize}
+				\item McEliece
+			\end{itemize}
+			\item Características:
+			\begin{itemize}
+				\item Segurança estudada há décadas
+				\item Chaves públicas muito grandes
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+	
+	% --- Hash-based ---
+	\begin{frame}{Criptografia Baseada em Hash}
+		\begin{itemize}
+			\item Segurança baseada apenas em funções hash
+			\item Principal uso: \textbf{assinaturas digitais}
+			\item Exemplos:
+			\begin{itemize}
+				\item XMSS
+				\item SPHINCS+
+			\end{itemize}
+			\item Propriedades:
+			\begin{itemize}
+				\item Segurança conservadora
+				\item Assinaturas maiores
+				\item Algumas variantes são stateful
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+	
+	% --- Padronização ---
+	\begin{frame}{Padronização e NIST}
+		\begin{itemize}
+			\item Processo de padronização do NIST (EUA)
+			\item Objetivo: substituir RSA e ECC
+			\item Seleções principais:
+			\begin{itemize}
+				\item Kyber (KEM)
+				\item Dilithium, Falcon, SPHINCS+ (assinaturas)
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+	
+	% --- Desafios ---
+	\begin{frame}{Desafios da PQC}
+		\begin{itemize}
+			\item Tamanhos de chaves e assinaturas
+			\item Integração com protocolos existentes (TLS, PKI)
+			\item Implementações seguras
+			\item Resistência a ataques de canal lateral
+		\end{itemize}
+	\end{frame}
+	
+	% --- Conclusão ---
+	\begin{frame}{Conclusão}
+		\begin{itemize}
+			\item Computação quântica muda o cenário criptográfico
+			\item PQC é essencial para segurança de longo prazo
+			\item Reticulados são a abordagem dominante
+			\item Migração deve começar antes da ameaça prática
+		\end{itemize}
+	\end{frame}
+	
+	% --- Slide final ---
+	\begin{frame}
+		\centering
+		\Huge Perguntas?
+	\end{frame}
+	
+\end{document}
